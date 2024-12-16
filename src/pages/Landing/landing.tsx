@@ -1,29 +1,40 @@
-import React from "react";
 import { Squig, Trianlge, Add, Circles, Man } from "../../assets";
 
 function Landing() {
   return (
-    <div>
-      <div>
-        <div>Build Your Awesome Platform</div>
-        <div>
+    <div className="text-[white] flex w-[100%] mt-[80px]">
+      <div className="w-[48%]">
+        <div className="text-[80px] font-[700] w-[582px]">
+          Build Your Awesome Platform
+        </div>
+        <div className="text-[21px] w-[582px]">
           Enver studio is a digital studio that offers several services such as
           UI/UX Design to developers, we will provide the best service for those
           of you who use our services.
         </div>
-        <div>Our Services &#8599;</div>
+        <div className="w-[204px] h-[58px] flex justify-center items-center bg-[#5454D4] font-bold rounded-lg rounded mt-[35px]">
+          Our Services &#8599;
+        </div>
       </div>
-      <div>
-        <div>
-          <img src={Squig} />
-          <img src={Trianlge} />
+      <div className="flex h-[712px] w-full justify-between relative w-full">
+        <div className="flex flex-col h-[712px] relative">
+          <img src={Squig} className="relative left-[100px]" />
+          <img
+            src={Trianlge}
+            className="bottom-[150px] absolute z-[100] w-[100px] h-[116px]"
+          />
         </div>
-        <div>
-          <img src={Man} />
+        <div className="relative">
+          <div className="w-[375.34px] h-[375.34px] border-[white] border-[2px] border-solid absolute rounded-[22.18px] rounded rotate-[23.64deg] top-[137px] right-[230px]"></div>
+          <img
+            src={Man}
+            className="h-[712px] -mt-[80px] w-[782px] z-[100] relative"
+          />
+          {/* <div className="w-[px] h-[1399.3px] shadow-kini absolute -top-[330px] -right-[0px] rotate-[63.71deg]"></div> */}
         </div>
-        <div>
-          <img src={Circles} />
-          <img src={Add} />
+        <div className=" h-[712px] relative">
+          <img src={Circles} className="" />
+          <img src={Add} className="bottom-[130px] absolute z-[100]" />
         </div>
       </div>
     </div>
