@@ -12,3 +12,25 @@
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
 }
+
+::-webkit-scrollbar {
+  width: 12px; /* For vertical scrollbars */
+  height: 12px; /* For horizontal scrollbars */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 10px;
+}
+
+/* Handle (the draggable thumb) */
+::-webkit-scrollbar-thumb {
+  background: #5454d4;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #303099;
+}
