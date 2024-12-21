@@ -26,11 +26,11 @@
 
 /* Handle (the draggable thumb) */
 ::-webkit-scrollbar-thumb {
-  background: #5454d4;
+  background: rgba(84, 84, 212, 0.2);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #303099;
+  background: #5454d4;
 }
