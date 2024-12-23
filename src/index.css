@@ -11,6 +11,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
+  /* font-family: mediaSansw; */
 }
 
 ::-webkit-scrollbar {
@@ -34,3 +35,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #5454d4;
 }
+
+/* @font-face {
+  font-family: mediaSans;
+  src: url("./assets/fonts/Hermaiona.otf");
+}
+
+@font-face {
+  font-family: mediaSansw;
+  src: url("./assets/fonts/Lady\ Angelina\ Script.otf");
+} */

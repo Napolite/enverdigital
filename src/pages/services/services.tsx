@@ -3,17 +3,17 @@ import { Add, Icons, Trianlge } from "../../assets";
 function Services() {
   return (
     <div className="text-white">
-      <div className="flex  p-[10px] h-min relative justify-between mt-[150px] mb-[100px]">
+      <div className="flex  p-[10px] h-min w-[90%] m-auto relative justify-between mt-[150px] mb-[100px]">
         <img
           src={Trianlge}
-          className="self-start relative -top-[40px] left-[50px] w-[104px] h-[120px]"
+          className="self-start relative -top-[40px] w-[104px] h-[120px]"
         />
         <div className="text-[60px] font-[900] w-[695px] h-[140px] text-center leading-[70px]">
           The Service We Provide For You
         </div>
         <img
           src={Add}
-          className="rotate-[31.92deg] w-[42px] h-[42px] relative self-end bottom-0"
+          className="rotate-[31.92deg] w-[42px] h-[42px] relative self-end bottom-[20px]"
         />
       </div>
       <div className="grid grid-cols-3 w-full">
@@ -63,6 +63,10 @@ function Services() {
           </div>
         </div>
       </div>
+      <img
+        src={Add}
+        className="rotate-[31.92deg] w-[42px] h-[42px] -mt-[50px] relative self-end bottom-0"
+      />
     </div>
   );
 }
