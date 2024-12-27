@@ -18,10 +18,13 @@ function Landing() {
       </div>
       <div className="flex h-[712px] w-full justify-between relative w-full">
         <div className="flex flex-col h-[712px] relative">
-          <img src={Squig} className="relative left-[100px]" />
+          <img
+            src={Squig}
+            className="relative left-[100px] motion-safe:animate-[bounce_1s_infinite]"
+          />
           <img
             src={Trianlge}
-            className="bottom-[150px] absolute z-[100] w-[100px] h-[116px]"
+            className="bottom-[150px] absolute z-[100] w-[100px] h-[116px] motion-safe:animate-[bounce_2.5s_infinite]"
           />
         </div>
         <div className="relative">
@@ -33,8 +36,14 @@ function Landing() {
           {/* <div className="w-[px] h-[1399.3px] shadow-kini absolute -top-[330px] -right-[0px] rotate-[63.71deg]"></div> */}
         </div>
         <div className=" h-[712px] relative">
-          <img src={Circles} className="" />
-          <img src={Add} className="bottom-[130px] absolute z-[100]" />
+          <img
+            src={Circles}
+            className="motion-safe:animate-[bounce_2s_infinite]"
+          />
+          <img
+            src={Add}
+            className="bottom-[130px] absolute z-[100] motion-safe:animate-[bounce_.8s_infinite]"
+          />
         </div>
       </div>
     </div>
