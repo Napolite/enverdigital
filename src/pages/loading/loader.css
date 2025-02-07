@@ -1,0 +1,141 @@
+.loader-logo {
+  animation: logobounce 1.3s forwards;
+}
+
+.loader-logo-leave {
+  animation: loaderLeave 1.3s 0.6s forwards;
+  position: absolute;
+  left: 27%;
+}
+
+.logoFade {
+  animation: logoFade 0.4s forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+  position: relative;
+  /* left: 50%; */
+}
+
+.logoFade::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 5px;
+  background-color: #007bff;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 30px violet,
+    inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff,
+    0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff;
+  animation: underlineAnim 0.3s 1.5s forwards;
+}
+
+.logoFade-leave {
+  animation: fadeOut 0.8s 0.2s forwards;
+  position: relative;
+}
+
+.logoFade-leave::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 5px;
+  background-color: #007bff;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 30px violet,
+    inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff,
+    0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff;
+  animation: scrollOut 0.3s forwards;
+}
+
+.underline {
+  /* width: auto;
+   */
+  /* width: 0px; */
+  animation: underlineAnim 1s forwards;
+  animation-delay: 3.5s;
+  /* height: 5px; */
+  margin-right: 10px;
+}
+
+@keyframes logobounce {
+  0% {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+  }
+  50% {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+  100% {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 27%;
+  }
+}
+
+@keyframes logoFade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes underlineAnim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes loaderLeave {
+  0% {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(0%, -50%);
+    opacity: 1;
+  }
+
+  50% {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  100% {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    position: relative;
+  }
+  to {
+    opacity: 0;
+    position: relative;
+  }
+}
+
+@keyframes scrollOut {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
