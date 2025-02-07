@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setPage(2);
-    }, 5800);
+    }, 5530);
   }, []);
   return (
     <>

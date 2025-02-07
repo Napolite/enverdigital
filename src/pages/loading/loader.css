@@ -113,7 +113,7 @@
 
   100% {
     position: absolute;
-    top: 0%;
+    top: -30%;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;

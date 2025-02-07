@@ -1,13 +1,14 @@
 import { Squig, Trianlge, Add, Circles, Man } from "../../assets";
+import "./landing.css";
 
 function Landing() {
   return (
     <div className="text-[white] flex w-[100%] mt-[80px]">
-      <div className="w-[48%]">
-        <div className="text-[80px] font-[700] w-[582px]">
+      <div className="w-[48%] relative">
+        <div className="text-[80px] font-[700] w-[582px] animate-[easeup_1.3s]">
           Build Your Awesome Platform
         </div>
-        <div className="text-[21px] w-[582px]">
+        <div className="text-[21px] w-[582px] animate-[easeup_0.8s]">
           Enver studio is a digital studio that offers several services such as
           UI/UX Design to developers, we will provide the best service for those
           of you who use our services.
@@ -16,8 +17,11 @@ function Landing() {
           Our Services &#8599;
         </div>
       </div>
-      <div className="flex h-[712px] w-full justify-between relative w-full">
-        <div className="flex flex-col h-[712px] relative">
+      <div className="flex h-[712px] w-full justify-between relative w-full relative">
+        <div
+          className="flex flex-col h-[712px] relative animate-[easeHigher_0.8s_forwards] delay-1000 opacity-0"
+          style={{ animationDelay: "0.2s" }}
+        >
           <img
             src={Squig}
             className="relative left-[100px] motion-safe:animate-[bounce_1s_infinite]"
@@ -27,7 +31,10 @@ function Landing() {
             className="bottom-[150px] absolute z-[100] w-[100px] h-[116px] motion-safe:animate-[bounce_2.5s_infinite]"
           />
         </div>
-        <div className="relative">
+        <div
+          className="relative  animate-[easeHigher_0.8s_forwards] opacity-0"
+          style={{ animationDelay: "0.4s" }}
+        >
           <div className="w-[375.34px] h-[375.34px] border-[white] border-[2px] border-solid absolute rounded-[22.18px] rounded rotate-[23.64deg] top-[137px] right-[230px]"></div>
           <img
             src={Man}
@@ -35,7 +42,10 @@ function Landing() {
           />
           {/* <div className="w-[px] h-[1399.3px] shadow-kini absolute -top-[330px] -right-[0px] rotate-[63.71deg]"></div> */}
         </div>
-        <div className=" h-[712px] relative">
+        <div
+          className=" h-[712px] relative  animate-[easeHigher_0.8s_forwards] opacity-0"
+          style={{ animationDelay: "0.2s" }}
+        >
           <img
             src={Circles}
             className="motion-safe:animate-[bounce_2s_infinite]"
