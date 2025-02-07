@@ -21,7 +21,8 @@
 
 /* Track (background of the scrollbar) */
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #19191b;
+
   border-radius: 10px;
 }
 
