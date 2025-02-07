@@ -36,11 +36,29 @@
   background: #5454d4;
 }
 
-/* @font-face {
+@font-face {
   font-family: mediaSans;
   src: url("./assets/fonts/Hermaiona.otf");
 }
+@font-face {
+  font-family: Bodoni;
+  src: url("./assets/fonts/bodoni_[allfont.net].ttf");
+}
+@font-face {
+  font-family: Nearo;
+  src: url("./assets/fonts/NearoRegular-51LEj.ttf");
+}
+@font-face {
+  font-family: Simonetta;
+  src: url("./assets/fonts/Simonetta-Regular.otf");
+}
 
+@font-face {
+  font-family: Graphik;
+  src: url("./assets/fonts/Graphik-Medium-Trial.otf");
+}
+
+/*
 @font-face {
   font-family: mediaSansw;
   src: url("./assets/fonts/Lady\ Angelina\ Script.otf");
