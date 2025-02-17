@@ -13,7 +13,7 @@ function VideoPage() {
   };
 
   return (
-    <div className="text-[white] mb-[100px] mt-[80px]">
+    <div className="text-[white] mb-[100px] mt-[80px]" id="about">
       <div className="flex items-start content-start mb-[50px]">
         <div className="text-[60px] font-[700] w-[568px] mr-[30px]">
           Why Enver is the best choice

@@ -9,10 +9,37 @@ function Navbar() {
       </div>
       <div className=" flex justify-center w-[50%] ">
         <div className="flex flex-2 justify-between w-[50%]">
-          <div className="text-[#5454D4]">Home</div>
-          <div>Services</div>
-          <div>Our Project</div>
-          <div>About Us</div>
+          <div className="text-[#5454D4] cursor-pointer">Home</div>
+          <div
+            onClick={() =>
+              document
+                .getElementById("services")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="cursor-pointer"
+          >
+            Services
+          </div>
+          <div
+            onClick={() =>
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="cursor-pointer"
+          >
+            Our Project
+          </div>
+          <div
+            onClick={() =>
+              document
+                .getElementById("about")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="cursor-pointer"
+          >
+            About Us
+          </div>
         </div>
       </div>
       <div className="w-[25%] flex justify-end">

@@ -2,7 +2,7 @@ import { Circles, p01, p02, p03, Squig } from "../../assets";
 
 function Portfolio() {
   return (
-    <div className="text-white mt-[80px] h-full">
+    <div className="text-white mt-[80px] h-full" id="projects">
       <div className="flex  p-[10px] h-min w-full m-auto relative justify-between mt-[150px] mb-[100px]">
         <div className="text-[60px] font-[900] w-[695px] h-[140px] text-center leading-[70px]">
           Our Awesome Portfolio

@@ -2,7 +2,7 @@ import { Add, Icons, Trianlge } from "../../assets";
 
 function Services() {
   return (
-    <div className="text-white">
+    <div className="text-white" id="services">
       <div className="flex  p-[10px] h-min w-[90%] m-auto relative justify-between mt-[150px] mb-[100px]">
         <img
           src={Trianlge}
